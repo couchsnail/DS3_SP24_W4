@@ -1,0 +1,15 @@
+<!doctype html>
+<title>Welcome to my Website!</title>
+
+<body>
+    <h1>I'm Camille, the upcoming Workshops Director for DS3!</h1>
+    <img src={{url_for('static',filename='20240329_133241.jpg')}} alt="A picture of me" width="400" height="500"/>
+    <br><br>
+    <text>You can do a lot of cool things with Flask!</text>
+    <br><br>
+    <h3>Click the button to open Google</h3> 
+        <!-- <button onclick="window.open(('https://google.com'))">Click me!</button>  -->
+        <form id="openTabForm" action="{{url_for('open_new_tab')}}" method="post" target="_blank">
+          <button type="submit">Open Google!</button>
+        </form>
+</body>
